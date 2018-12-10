@@ -1,0 +1,117 @@
+#pragma once
+
+struct VERTEX_PC
+{
+	D3DXVECTOR3 p;
+	D3DCOLOR	c;
+
+	VERTEX_PC() {}
+	VERTEX_PC(D3DXVECTOR3 _p, D3DCOLOR _c) : p(_p), c(_c) {}
+
+	enum { FVF = D3DFVF_XYZ | D3DFVF_DIFFUSE, };
+};
+
+struct VERTEX_PT
+{
+	D3DXVECTOR3 p;
+	D3DXVECTOR2 t;
+
+	VERTEX_PT() {}
+	VERTEX_PT(D3DXVECTOR3 _p, D3DXVECTOR2 _t) : p(_p), t(_t) {}
+
+	enum { FVF = D3DFVF_XYZ | D3DFVF_TEX1, };
+};
+
+struct VERTEX_PNT
+{
+	D3DXVECTOR3 p;
+	D3DXVECTOR3	n;
+	D3DXVECTOR2	t;
+
+	VERTEX_PNT() {}
+	VERTEX_PNT(D3DXVECTOR3 _p, D3DXVECTOR3 _n, D3DXVECTOR2 _t) : p(_p), n(_n), t(_t) {}
+
+	enum { FVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1, };
+};
+
+
+struct VERTEX_PNC
+{
+	D3DXVECTOR3 p;
+	D3DXVECTOR3	n;
+	D3DCOLOR	c;
+
+	VERTEX_PNC() {}
+	VERTEX_PNC(D3DXVECTOR3 _p, D3DXVECTOR3 _n, D3DCOLOR _c) : p(_p), n(_n), c(_c) {}
+
+	enum { FVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE, };
+};
+
+
+
+struct VERTEX_PCT
+{
+	D3DXVECTOR3 p;
+	D3DCOLOR	c;
+	D3DXVECTOR2 t;
+	D3DXVECTOR2 t1;
+
+	VERTEX_PCT() {}
+	VERTEX_PCT(D3DXVECTOR3 _p, D3DCOLOR _c, D3DXVECTOR2 _t) : p(_p), c(_c), t(_t), t1(_t) {}
+
+	enum { FVF = D3DFVF_XYZ | D3DFVF_DIFFUSE | D3DFVF_TEX2, };
+};
+
+struct VERTEX_RHWC
+{
+	VERTEX_RHWC() {}
+	VERTEX_RHWC(D3DXVECTOR4 _p, D3DCOLOR _c) : p(_p), c(_c) {}
+
+	D3DXVECTOR4 p;
+	D3DCOLOR	c;
+
+	enum { FVF = D3DFVF_XYZRHW | D3DFVF_DIFFUSE, };
+};
+
+struct VERTEX_RHWT
+{
+	VERTEX_RHWT() {}
+	VERTEX_RHWT(D3DXVECTOR4 _p, D3DXVECTOR2 _t) : p(_p), t(_t) {}
+
+	D3DXVECTOR4 p;
+	D3DXVECTOR2	t;
+
+	enum { FVF = D3DFVF_XYZRHW | D3DFVF_TEX1, };
+};
+
+
+struct VERTEX_PNCT
+{
+	D3DXVECTOR3 p;
+	D3DXVECTOR3	n;
+	D3DCOLOR	c;
+	D3DXVECTOR2	t;
+
+	VERTEX_PNCT() {}
+	VERTEX_PNCT(D3DXVECTOR3 _p, D3DXVECTOR3 _n, D3DCOLOR _c, D3DXVECTOR2 _t) : p(_p), n(_n), c(_c), t(_t) {}
+
+	enum { FVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1 | D3DFVF_DIFFUSE };
+};
+
+struct VERTEX_BLENDING
+{
+	D3DXVECTOR3 p;
+	float		weights[3];
+	DWORD		index;
+	D3DXVECTOR2	t;
+
+	VERTEX_BLENDING() {}
+	VERTEX_BLENDING(D3DXVECTOR3 _p, float* _weights, DWORD _i, D3DXVECTOR2 _t)
+		: p(_p), index(_i), t(_t) {
+		weights[0] = _weights[0];
+		weights[1] = _weights[1];
+		weights[2] = _weights[2];
+	}
+
+	enum { FVF = D3DFVF_XYZB4 | D3DFVF_LASTBETA_UBYTE4 | D3DFVF_TEX1 };
+};
