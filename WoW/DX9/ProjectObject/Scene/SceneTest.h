@@ -1,4 +1,5 @@
 #pragma once
+#include "ProjectObject/Display/UI/PlayerUI.h"
 
 class SceneTest : public IScene
 {
@@ -7,7 +8,7 @@ private:
 	class Cube* cube;
 	class Cube* cubeChild;
 	class Grid* grid;
-
+	PlayerUI *playerUI = NULL;
 public:
 	SceneTest(WORD index);
 	~SceneTest();

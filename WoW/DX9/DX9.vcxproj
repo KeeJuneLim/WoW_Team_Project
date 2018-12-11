@@ -242,6 +242,7 @@
     <ClInclude Include="ProjectObject\Display\Test\ShadowMapping.h" />
     <ClInclude Include="ProjectObject\Display\Test\UVWater.h" />
     <ClInclude Include="ProjectObject\Display\Test\Viewport.h" />
+    <ClInclude Include="ProjectObject\Display\UI\PlayerUI.h" />
     <ClInclude Include="ProjectObject\Display\Weapon.h" />
     <ClInclude Include="ProjectObject\Scene\SceneGrid.h" />
     <ClInclude Include="ProjectObject\Scene\SceneOBJ.h" />
@@ -342,6 +343,7 @@
     <ClCompile Include="ProjectObject\Display\Test\NormalMapping.cpp" />
     <ClCompile Include="ProjectObject\Display\Test\ShadowMapping.cpp" />
     <ClCompile Include="ProjectObject\Display\Test\UVWater.cpp" />
+    <ClCompile Include="ProjectObject\Display\UI\PlayerUI.cpp" />
     <ClCompile Include="ProjectObject\Display\Weapon.cpp" />
     <ClCompile Include="ProjectObject\Scene\SceneGrid.cpp" />
     <ClCompile Include="ProjectObject\Scene\SceneOBJ.cpp" />

@@ -14,6 +14,7 @@
 #include "ProjectObject/Display/Test/ShadowMapping.h"
 #include "ProjectObject\Display\Player.h"
 
+
 SceneTest::SceneTest(WORD index)
 	:IScene(index)
 {
@@ -56,6 +57,7 @@ void SceneTest::Init()
 	pObj->Init();
 	AddDisplayObject(pObj);
 	Objects::AddToTagList(TAG_PLAYER, pObj);
+	camTarget = pObj;
 
 	D3DXMATRIX matS1, matR1, matT1, localMat1;
 	D3DXMatrixScaling(&matS1, 0.12f, 0.12f, 0.12f);
@@ -122,15 +124,16 @@ void SceneTest::Init()
 
 	
 	
-	//if (camTarget) Camera::Get()->SetTargetPosition(camTarget->GetPosition());
-
+	if (camTarget) Camera::Get()->SetTargetPosition(camTarget->GetPosition());
+	playerUI = new PlayerUI; playerUI->Init();
 }
 
 void SceneTest::Update()
 {
+	SAFE_UPDATE(playerUI);
 }
 
 void SceneTest::Render()
 {
-	
+	SAFE_RENDER(playerUI);
 }

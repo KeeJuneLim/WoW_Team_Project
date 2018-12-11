@@ -86,6 +86,9 @@
     <Filter Include="Source Files\03.Graphics\04.Model\X">
       <UniqueIdentifier>{280d9acf-7a69-4354-b08a-58f5ca2582c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\01.ProjectObject\UI">
+      <UniqueIdentifier>{f22623a2-4ab3-4901-89e4-fb6f333137ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DX9.h">
@@ -367,6 +370,9 @@
     <ClInclude Include="ProjectObject\Display\Weapon.h">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectObject\Display\UI\PlayerUI.h">
+      <Filter>Source Files\01.ProjectObject\UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -602,6 +608,9 @@
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\Weapon.cpp">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectObject\Display\UI\PlayerUI.cpp">
+      <Filter>Source Files\01.ProjectObject\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
