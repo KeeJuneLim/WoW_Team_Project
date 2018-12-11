@@ -45,6 +45,9 @@ void SceneTest::Init()
 	//pObj = new ShadowMapping(); pObj->Init(); AddDisplayObject(pObj);
 	//camTarget = pObj;
 	/**/
+	//푸쉬 테스트용
+	float testf = 0.0f;
+
 	float scale = 1.2f;
 	float offset = 2.5f;
 
