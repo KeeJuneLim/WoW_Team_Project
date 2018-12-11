@@ -2,6 +2,7 @@
 #include "SceneTest.h"
 #include "Graphics/Model/Sky/SkyGradient.h"
 #include "Graphics/Model/Sky/Sky.h"
+#include "Graphics/Model/OBJ/ObjMap.h"
 #include "ProjectObject/Display/ShaderCube.h"
 #include "ProjectObject/Display/Particle/SphereParticle.h"
 #include "ProjectObject/Display/Test/MipmapFilter.h"
@@ -51,6 +52,29 @@ void SceneTest::Init()
 	pObj = new Player();
 	pObj->Init();
 	AddDisplayObject(pObj);
+	Objects::AddToTagList(TAG_PLAYER, pObj);
+
+	D3DXMATRIX matS1, matR1, matT1, localMat1;
+	D3DXMatrixScaling(&matS1, 0.12f, 0.12f, 0.12f);
+	D3DXMatrixRotationY(&matR1, D3DX_PI * 1.0f);
+	D3DXMatrixTranslation(&matT1, 255, 5, 125);
+	localMat1 = matS1 * matR1 * matT1;
+
+	ObjMap* map = new ObjMap();
+	map->Load(ASSET_PATH + L"Models/MAP/", L"testmap1.obj", &localMat1);
+	map->Init();
+	AddDisplayObject(map);
+
+	//D3DXMATRIX matS2, matR2, matT2, localMat2;
+	D3DXMatrixScaling(&matS1, 0.12f, 0.12f, 0.12f);
+	D3DXMatrixRotationY(&matR1, D3DX_PI);
+	D3DXMatrixTranslation(&matT1, 255, 5, 125);
+	localMat1 = matS1 * matR1 * matT1;
+
+	ObjMap* map2 = new ObjMap();
+	map2->Load(ASSET_PATH + L"Models/MAP/", L"testmap2.obj", &localMat1);
+	map2->Init();
+	AddDisplayObject(map2);
 
 	//player->Init();
 	//pObj = new SkinnedMeshHLSL((ASSET_PATH + L"Models/x/zealot/").c_str(), L"Idle.X");

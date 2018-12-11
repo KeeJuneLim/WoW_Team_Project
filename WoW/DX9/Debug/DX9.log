@@ -1,3 +1,4 @@
 ﻿  Player.cpp
-c:\users\picky\desktop\03_dx9_01_progress_181107\dx9\projectobject\display\player.cpp(13): warning C4305: '인수': 'double'에서 'FLOAT'(으)로 잘립니다.
-  DX9.vcxproj -> C:\Users\picky\Desktop\03_DX9_01_Progress_181107\Debug\DX9.exe
+c:\users\admin\desktop\baseproject\wow_team_project\wow\dx9\projectobject\display\player.cpp(13): warning C4305: '인수': 'double'에서 'FLOAT'(으)로 잘립니다.
+  DX9.vcxproj -> C:\Users\admin\Desktop\BaseProject\WoW_Team_Project\WoW\Debug\DX9.exe
+  DX9.vcxproj -> C:\Users\admin\Desktop\BaseProject\WoW_Team_Project\WoW\Debug\DX9.pdb (Partial PDB)

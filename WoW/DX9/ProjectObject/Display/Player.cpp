@@ -226,18 +226,35 @@ void Player::Update()
 	cowMotion[status]->Update();
 
 ////////////////////
-	if (Objects::GetCurrentMap())
+
+	list<IDisplayObject*> m_mapList;
+	m_mapList = Objects::FindObjectsByTag(TAG_MAP);
+	list<IMap*> mapList;
+	for (auto p : m_mapList)
 	{
-		if (velocity.y <= 0)
+		mapList.push_back((IMap*)p);
+	}
+
+	for (auto p : mapList)
+	{
+		if (mapList.empty() == false)
 		{
-			float height;
-			if (Objects::GetCurrentMap()->ComputeHeight(height, targetPosition))
+			if (velocity.y <= 0)
 			{
-				if (targetPosition.y <= height)
+				float height;
+
+				if (p->ComputeHeight(height, targetPosition))
 				{
-					targetPosition.y = height;
-					velocity.y = 0;
+					if (targetPosition.y <= height)
+					{
+						targetPosition.y = height;
+						velocity.y = 0;
+					}
+					position = targetPosition;
 				}
+			}
+			else
+			{
 				position = targetPosition;
 			}
 		}
@@ -245,10 +262,6 @@ void Player::Update()
 		{
 			position = targetPosition;
 		}
-	}
-	else
-	{
-		position = targetPosition;
 	}
 /////////////////////////////////////////
 
