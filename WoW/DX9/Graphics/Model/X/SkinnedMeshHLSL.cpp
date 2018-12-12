@@ -27,7 +27,7 @@ SkinnedMeshHLSL::SkinnedMeshHLSL(LPCTSTR path, LPCTSTR filename)
 		&m_pAC);
 
 	//Load(path, filename);
-	scale = D3DXVECTOR3(0.2f, 0.2f, 0.2f);
+	scale = D3DXVECTOR3(0.02f, 0.02f, 0.02f);
 	baseRotY =  -D3DX_PI / 2;
 
 }

@@ -68,6 +68,7 @@ void Player::Init()
 
 void Player::Update()
 {
+	Camera::Get()->UpdateRotation();
 	rotation.y = Camera::Get()->GetCurrentRotation()->y;
 
 

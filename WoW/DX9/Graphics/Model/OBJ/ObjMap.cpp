@@ -35,27 +35,27 @@ void ObjMap::Load(wstring filePath, wstring fileName, D3DXMATRIX* transform)
 
 void ObjMap::Update()
 {
-	D3DXVECTOR3 playerPos;
-	D3DXVECTOR3 playerDir;
-	if (Input::ButtonDown(Input::LBUTTON))
-	{
-		D3DXVECTOR3 pos = Input::GetMousePosition();
+	//D3DXVECTOR3 playerPos;
+	//D3DXVECTOR3 playerDir;
+	//if (Input::ButtonDown(Input::LBUTTON))
+	//{
+	//	D3DXVECTOR3 pos = Input::GetMousePosition();
 
-		playerMoving = true;
-		if (ComputeClickPosition(pos, pos.x, pos.y) == true)
-		{
-			playerPos = *Objects::GetPlayer()->GetPosition();
-			playerDir = pos - playerPos;
+	//	playerMoving = true;
+	//	if (ComputeClickPosition(pos, pos.x, pos.y) == true)
+	//	{
+	//		playerPos = *Objects::GetPlayer()->GetPosition();
+	//		playerDir = pos - playerPos;
 
-			Objects::GetPlayer()->SetRotation
-			(&D3DXVECTOR3(0, D3DX_PI/2 - atan2(playerDir.z, playerDir.x), 0));
-			Objects::GetPlayer()->SetMovePosition(&pos);
-			Objects::GetPlayer()->SetMoveDirection(&playerDir);
+	//		Objects::GetPlayer()->SetRotation
+	//		(&D3DXVECTOR3(0, D3DX_PI/2 - atan2(playerDir.z, playerDir.x), 0));
+	//		Objects::GetPlayer()->SetMovePosition(&pos);
+	//		Objects::GetPlayer()->SetMoveDirection(&playerDir);
 
-			//Objects::GetPlayer()->SetPosition(&pos);
+	//		//Objects::GetPlayer()->SetPosition(&pos);
 
-		}
-	}
+	//	}
+	//}
 	//if (playerMoving)
 	//{
 	//	Input::KeyPress('W');

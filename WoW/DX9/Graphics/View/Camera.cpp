@@ -34,7 +34,7 @@ void Camera::Init(HWND handle)
 
 void Camera::Reset()
 {
-	offset = D3DXVECTOR3(0, 2, -2);
+	offset = D3DXVECTOR3(0, 1, -2);
 	position = offset;
 	rotation = D3DXVECTOR3(0, 0, 0);
 	focus = D3DXVECTOR3(0, 0, 0);

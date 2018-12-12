@@ -12,7 +12,7 @@ IDisplayObject::IDisplayObject()
 	D3DXMatrixIdentity(&localMatrix);
 	D3DXMatrixIdentity(&worldMatrix);
 	
-	moveSpeed = 50.0f;
+	moveSpeed = 3.0f;
 	rotationSpeed = 5.0f;
 	jumpPower = 18.0f;
 

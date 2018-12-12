@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{05c4ba7a-63cb-491c-a8b5-b59f63f02b0e}</UniqueIdentifier>
     </Filter>
@@ -53,41 +49,81 @@
     <Filter Include="Source Files\03.Graphics\01.Interface\UI">
       <UniqueIdentifier>{77ecab93-6c51-43c4-bcb4-fa844fd59916}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\03.Graphics\03.View">
-      <UniqueIdentifier>{01ac52b1-41f3-4b77-b2e8-b678692e8234}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\02.Shader">
-      <UniqueIdentifier>{289d1ba5-31c3-453a-a795-ca22a0bb4b28}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\02.Shader\HLSL">
-      <UniqueIdentifier>{c14b2f54-9de1-43f6-9d09-f9a51d0746d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\02.Shader\ShaderClass">
-      <UniqueIdentifier>{6162da08-50bc-4d74-b6bf-c6c7bf3a2243}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\04.Model">
-      <UniqueIdentifier>{9b9f0f85-b5d6-45c0-85d3-9b46f0d1e9fd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\04.Model\ASE">
-      <UniqueIdentifier>{d9b153f8-1f20-4156-9616-9c26978d5381}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\04.Model\OBJ">
-      <UniqueIdentifier>{052605e6-d5eb-40f6-9890-e5a46c2a4ae8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\04.Model\Sky">
-      <UniqueIdentifier>{c27fddd4-ccf1-4f48-a630-75fcf0767ca9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\03.Graphics\04.Model\Terrain">
-      <UniqueIdentifier>{e07ad7c2-86c5-40ae-a480-5f3126921038}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\05.Utility">
       <UniqueIdentifier>{35fa1137-24dd-4540-b92c-f96955b6093e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\03.Graphics\04.Model\X">
-      <UniqueIdentifier>{280d9acf-7a69-4354-b08a-58f5ca2582c4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\01.ProjectObject\UI">
       <UniqueIdentifier>{f22623a2-4ab3-4901-89e4-fb6f333137ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft">
+      <UniqueIdentifier>{52debf23-4b6c-4bca-8290-d886713981b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\00.Main">
+      <UniqueIdentifier>{6ad8e686-dcd5-421b-bf7d-acf354e65949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\01.Object">
+      <UniqueIdentifier>{a0fa7a97-51d0-4c0e-a1e3-6fbeaa9cd5c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\01.Object\99.Scene">
+      <UniqueIdentifier>{2e993958-346a-48d5-a81d-4f79d74a45f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\01.Object\98.UI">
+      <UniqueIdentifier>{1ed21137-57fe-4d04-97af-6a345ee33708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\01.Object\00.Player">
+      <UniqueIdentifier>{7df6a257-b23a-4a2e-bc08-d71e9d424af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics">
+      <UniqueIdentifier>{7a1d1b41-5a13-4760-99df-1be68315d131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\00.Data">
+      <UniqueIdentifier>{5915dfce-75a0-4138-9223-c7044b35694e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\01.Interface">
+      <UniqueIdentifier>{fb1f455a-c612-4c43-8e81-2a8bbf677247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\02.Shader">
+      <UniqueIdentifier>{289d1ba5-31c3-453a-a795-ca22a0bb4b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\02.Shader\HLSL">
+      <UniqueIdentifier>{c14b2f54-9de1-43f6-9d09-f9a51d0746d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass">
+      <UniqueIdentifier>{6162da08-50bc-4d74-b6bf-c6c7bf3a2243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\03.View">
+      <UniqueIdentifier>{01ac52b1-41f3-4b77-b2e8-b678692e8234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\04.Model">
+      <UniqueIdentifier>{9b9f0f85-b5d6-45c0-85d3-9b46f0d1e9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\04.Model\ASE">
+      <UniqueIdentifier>{d9b153f8-1f20-4156-9616-9c26978d5381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\04.Model\OBJ">
+      <UniqueIdentifier>{052605e6-d5eb-40f6-9890-e5a46c2a4ae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\04.Model\Sky">
+      <UniqueIdentifier>{c27fddd4-ccf1-4f48-a630-75fcf0767ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\04.Model\Terrain">
+      <UniqueIdentifier>{e07ad7c2-86c5-40ae-a480-5f3126921038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\03.Graphics\04.Model\X">
+      <UniqueIdentifier>{280d9acf-7a69-4354-b08a-58f5ca2582c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\02.Manager">
+      <UniqueIdentifier>{3fbe313c-f5ac-470c-b900-9b0b7cc76431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\04.Utility">
+      <UniqueIdentifier>{2f1d5795-d29d-488f-8131-160b930cfee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\02.Skill">
+      <UniqueIdentifier>{6cce1ed1-1f05-4f1c-9d29-206df52b74ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.World_of_Warcraft\01.Object\99.Scene\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -95,9 +131,6 @@
       <Filter>Source Files\00.Main</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>Source Files\00.Main</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
       <Filter>Source Files\00.Main</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
@@ -148,9 +181,6 @@
     <ClInclude Include="ImGui\imstb_truetype.h">
       <Filter>Source Files\02.System\ImGui</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\Data\DXDefinition.h">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics\Data\VertexTypes.h">
       <Filter>Source Files\03.Graphics\00.Data</Filter>
     </ClInclude>
@@ -164,46 +194,19 @@
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\IShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Interface\IDisplayObject.h">
-      <Filter>Source Files\03.Graphics\01.Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Interface\IScene.h">
-      <Filter>Source Files\03.Graphics\01.Interface</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\LightingShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager\Assets.h">
-      <Filter>Source Files\04.Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager\Objects.h">
-      <Filter>Source Files\04.Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager\Scenes.h">
-      <Filter>Source Files\04.Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager\Shaders.h">
-      <Filter>Source Files\04.Manager</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Scene\SceneGrid.h">
       <Filter>Source Files\01.ProjectObject\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\ColorShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Data\Boundary.h">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager\Rendering.h">
-      <Filter>Source Files\04.Manager</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\ShaderCube.h">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Data\Material.h">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\Particle\SphereParticle.h">
       <Filter>Source Files\01.ProjectObject\Display\Particle</Filter>
@@ -215,28 +218,25 @@
       <Filter>Source Files\01.ProjectObject\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\ASE\Asciitok.h">
-      <Filter>Source Files\03.Graphics\04.Model\ASE</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\ASE</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\ASE\AseLoader.h">
-      <Filter>Source Files\03.Graphics\04.Model\ASE</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\ASE</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\ASE\AseModel.h">
-      <Filter>Source Files\03.Graphics\04.Model\ASE</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\ASE</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\ASE\AseModelParts.h">
-      <Filter>Source Files\03.Graphics\04.Model\ASE</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\ASE</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\ASEWoman.h">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
-    </ClInclude>
-    <ClInclude Include="ProjectObject\Scene\SceneTest.h">
-      <Filter>Source Files\01.ProjectObject\Scene</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\Test\ExtractFromBuffer.h">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\TextureShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Interface\UI\IUIObject.h">
       <Filter>Source Files\03.Graphics\01.Interface\UI</Filter>
@@ -251,76 +251,55 @@
       <Filter>Source Files\03.Graphics\01.Interface\UI</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\OBJ\ObjLoader.h">
-      <Filter>Source Files\03.Graphics\04.Model\OBJ</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\OBJ</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\OBJ\ObjMap.h">
-      <Filter>Source Files\03.Graphics\04.Model\OBJ</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Interface\IMap.h">
-      <Filter>Source Files\03.Graphics\01.Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="ProjectObject\Display\MainUI.h">
-      <Filter>Source Files\01.ProjectObject\Display</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\OBJ</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\SkyGradientShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Data\Light.h">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\Terrain\Terrain.h">
-      <Filter>Source Files\03.Graphics\04.Model\Terrain</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Terrain</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\Sky\Sky.h">
-      <Filter>Source Files\03.Graphics\04.Model\Sky</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Sky</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\Sky\SkyGradient.h">
-      <Filter>Source Files\03.Graphics\04.Model\Sky</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Sky</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\Terrain\QuadTree.h">
-      <Filter>Source Files\03.Graphics\04.Model\Terrain</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Terrain</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\View\Camera.h">
-      <Filter>Source Files\03.Graphics\03.View</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\03.View</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\View\Frustum.h">
-      <Filter>Source Files\03.Graphics\03.View</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\03.View</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\View\Ray.h">
-      <Filter>Source Files\03.Graphics\03.View</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\03.View</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Interface\UI\UITest.h">
       <Filter>Source Files\03.Graphics\01.Interface\UI</Filter>
     </ClInclude>
-    <ClInclude Include="Utility\BinaryFile.h">
-      <Filter>Source Files\05.Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="Utility\Path.h">
-      <Filter>Source Files\05.Utility</Filter>
-    </ClInclude>
-    <ClInclude Include="Utility\String.h">
-      <Filter>Source Files\05.Utility</Filter>
-    </ClInclude>
     <ClInclude Include="Graphics\Model\X\AllocateHierarchyHLSL.h">
-      <Filter>Source Files\03.Graphics\04.Model\X</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\X</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\Test\Viewport.h">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\ToonShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\BoundaryShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\HidingShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderData.h">
-      <Filter>Source Files\03.Graphics\02.Shader</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Data\Hiding.h">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\Test\EnvMapping.h">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
@@ -332,46 +311,103 @@
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\Sky\Cloud.h">
-      <Filter>Source Files\03.Graphics\04.Model\Sky</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Sky</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\CloudShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\Test\UVWater.h">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\ShadowMapShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\ShadowShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\Test\ShadowMapping.h">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\Terrain\TerrainEditor.h">
-      <Filter>Source Files\03.Graphics\04.Model\Terrain</Filter>
-    </ClInclude>
-    <ClInclude Include="Manager\GUI.h">
-      <Filter>Source Files\04.Manager</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Terrain</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Shader\ShaderClass\TerrainEditorShader.h">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClInclude>
     <ClInclude Include="Graphics\Model\X\SkinnedMeshHLSL.h">
-      <Filter>Source Files\03.Graphics\04.Model\X</Filter>
-    </ClInclude>
-    <ClInclude Include="ProjectObject\Scene\SceneOBJ.h">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
-    </ClInclude>
-    <ClInclude Include="ProjectObject\Display\Player.h">
-      <Filter>Source Files\01.ProjectObject\Display</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\X</Filter>
     </ClInclude>
     <ClInclude Include="ProjectObject\Display\Weapon.h">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectObject\Display\Player.h">
+      <Filter>00.World_of_Warcraft\01.Object\00.Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectObject\Display\MainUI.h">
+      <Filter>Source Files\01.ProjectObject\Display</Filter>
+    </ClInclude>
     <ClInclude Include="ProjectObject\Display\UI\PlayerUI.h">
-      <Filter>Source Files\01.ProjectObject\UI</Filter>
+      <Filter>00.World_of_Warcraft\01.Object\98.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Data\Boundary.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Data\DXDefinition.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Data\Hiding.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Data\Light.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Data\Material.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Interface\IDisplayObject.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Interface\IMap.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Interface\IScene.h">
+      <Filter>00.World_of_Warcraft\03.Graphics\01.Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\Assets.h">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\GUI.h">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\Objects.h">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\Rendering.h">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\Scenes.h">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager\Shaders.h">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\String.h">
+      <Filter>00.World_of_Warcraft\04.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\BinaryFile.h">
+      <Filter>00.World_of_Warcraft\04.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Path.h">
+      <Filter>00.World_of_Warcraft\04.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>00.World_of_Warcraft\00.Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectObject\Scene\SceneOBJ.h">
+      <Filter>00.World_of_Warcraft\01.Object\99.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectObject\Scene\SceneTest.h">
+      <Filter>00.World_of_Warcraft\01.Object\99.Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -420,9 +456,6 @@
     <ClCompile Include="ImGui\imgui_widgets.cpp">
       <Filter>Source Files\02.System\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\Data\DXDefinition.cpp">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
-    </ClCompile>
     <ClCompile Include="ProjectObject\Display\RectObject.cpp">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClCompile>
@@ -432,59 +465,38 @@
     <ClCompile Include="ProjectObject\Display\Grid.cpp">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics\Interface\IDisplayObject.cpp">
-      <Filter>Source Files\03.Graphics\01.Interface</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\LightingShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
-    </ClCompile>
-    <ClCompile Include="Manager\Assets.cpp">
-      <Filter>Source Files\04.Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="Manager\Objects.cpp">
-      <Filter>Source Files\04.Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="Manager\Scenes.cpp">
-      <Filter>Source Files\04.Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="Manager\Shaders.cpp">
-      <Filter>Source Files\04.Manager</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Scene\SceneGrid.cpp">
       <Filter>Source Files\01.ProjectObject\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\ColorShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
-    </ClCompile>
-    <ClCompile Include="Manager\Rendering.cpp">
-      <Filter>Source Files\04.Manager</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\ShaderCube.cpp">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\IShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Scene\SceneTerrain.cpp">
       <Filter>Source Files\01.ProjectObject\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\ASE\AseLoader.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\ASE</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\ASE</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\ASE\AseModel.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\ASE</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\ASE</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\ASE\AseModelParts.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\ASE</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\ASE</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\ASEWoman.cpp">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClCompile>
-    <ClCompile Include="ProjectObject\Scene\SceneTest.cpp">
-      <Filter>Source Files\01.ProjectObject\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\TextureShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Interface\UI\IUIObject.cpp">
       <Filter>Source Files\03.Graphics\01.Interface\UI</Filter>
@@ -499,70 +511,49 @@
       <Filter>Source Files\03.Graphics\01.Interface\UI</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\OBJ\ObjLoader.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\OBJ</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\OBJ</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\OBJ\ObjMap.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\OBJ</Filter>
-    </ClCompile>
-    <ClCompile Include="ProjectObject\Display\MainUI.cpp">
-      <Filter>Source Files\01.ProjectObject\Display</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\OBJ</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\SkyGradientShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Data\Light.cpp">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
-    </ClCompile>
-    <ClCompile Include="ProjectObject\Scene\SceneOBJ.cpp">
-      <Filter>Source Files\01.ProjectObject\Scene</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\Terrain\Terrain.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\Terrain</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Terrain</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\Sky\Sky.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\Sky</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Sky</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\Sky\SkyGradient.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\Sky</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Sky</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\Terrain\QuadTree.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\Terrain</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Terrain</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\View\Camera.cpp">
-      <Filter>Source Files\03.Graphics\03.View</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\03.View</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\View\Frustum.cpp">
-      <Filter>Source Files\03.Graphics\03.View</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\03.View</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\View\Ray.cpp">
-      <Filter>Source Files\03.Graphics\03.View</Filter>
-    </ClCompile>
-    <ClCompile Include="Utility\BinaryFile.cpp">
-      <Filter>Source Files\05.Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="Utility\Path.cpp">
-      <Filter>Source Files\05.Utility</Filter>
-    </ClCompile>
-    <ClCompile Include="Utility\String.cpp">
-      <Filter>Source Files\05.Utility</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\03.View</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\X\AllocateHierarchyHLSL.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\X</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\X</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\ToonShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\BoundaryShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\HidingShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderData.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Data\Boundary.cpp">
-      <Filter>Source Files\03.Graphics\00.Data</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\Test\EnvMapping.cpp">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
@@ -574,121 +565,166 @@
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\Sky\Cloud.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\Sky</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Sky</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\CloudShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\Test\UVWater.cpp">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\ShadowMapShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\ShadowShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\Test\ShadowMapping.cpp">
       <Filter>Source Files\01.ProjectObject\Display\Test</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\Terrain\TerrainEditor.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\Terrain</Filter>
-    </ClCompile>
-    <ClCompile Include="Manager\GUI.cpp">
-      <Filter>Source Files\04.Manager</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\Terrain</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Shader\ShaderClass\TerrainEditorShader.cpp">
-      <Filter>Source Files\03.Graphics\02.Shader\ShaderClass</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\ShaderClass</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\Model\X\SkinnedMeshHLSL.cpp">
-      <Filter>Source Files\03.Graphics\04.Model\X</Filter>
-    </ClCompile>
-    <ClCompile Include="ProjectObject\Display\Player.cpp">
-      <Filter>Source Files\01.ProjectObject\Display</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\04.Model\X</Filter>
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\Weapon.cpp">
       <Filter>Source Files\01.ProjectObject\Display</Filter>
     </ClCompile>
+    <ClCompile Include="ProjectObject\Display\Player.cpp">
+      <Filter>00.World_of_Warcraft\01.Object\00.Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectObject\Display\MainUI.cpp">
+      <Filter>Source Files\01.ProjectObject\Display</Filter>
+    </ClCompile>
     <ClCompile Include="ProjectObject\Display\UI\PlayerUI.cpp">
-      <Filter>Source Files\01.ProjectObject\UI</Filter>
+      <Filter>00.World_of_Warcraft\01.Object\98.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Data\Boundary.cpp">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Data\DXDefinition.cpp">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Data\Light.cpp">
+      <Filter>00.World_of_Warcraft\03.Graphics\00.Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Interface\IDisplayObject.cpp">
+      <Filter>00.World_of_Warcraft\03.Graphics\01.Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\Assets.cpp">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\GUI.cpp">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\Objects.cpp">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\Rendering.cpp">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\Scenes.cpp">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\Shaders.cpp">
+      <Filter>00.World_of_Warcraft\02.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\BinaryFile.cpp">
+      <Filter>00.World_of_Warcraft\04.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Path.cpp">
+      <Filter>00.World_of_Warcraft\04.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\String.cpp">
+      <Filter>00.World_of_Warcraft\04.Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectObject\Scene\SceneOBJ.cpp">
+      <Filter>00.World_of_Warcraft\01.Object\99.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectObject\Scene\SceneTest.cpp">
+      <Filter>00.World_of_Warcraft\01.Object\99.Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DX9.rc">
-      <Filter>Resource Files</Filter>
+      <Filter>00.World_of_Warcraft\01.Object\99.Scene\Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico">
-      <Filter>Resource Files</Filter>
+      <Filter>00.World_of_Warcraft\01.Object\99.Scene\Resource Files</Filter>
     </Image>
     <Image Include="DX9.ico">
-      <Filter>Resource Files</Filter>
+      <Filter>00.World_of_Warcraft\01.Object\99.Scene\Resource Files</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Graphics\Shader\HLSL\Color.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Lighting.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Texture.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Particle.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\SkyGradient.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\TerrainBrush.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Skinnedmesh.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Toon.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Base.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Boundary.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Hiding.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\EnvMapping.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\NormalMapping.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Instancing.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Cloud.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\UVWater.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Rect.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\ShadowMap.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\Shadow.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\SimpleApplyShadow.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
     <FxCompile Include="Graphics\Shader\HLSL\SimpleCreateShadow.fx">
-      <Filter>Source Files\03.Graphics\02.Shader\HLSL</Filter>
+      <Filter>00.World_of_Warcraft\03.Graphics\02.Shader\HLSL</Filter>
     </FxCompile>
   </ItemGroup>
 </Project>
