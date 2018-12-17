@@ -21,8 +21,8 @@ ShaderCube::ShaderCube(D3DXVECTOR3 pos, D3DXVECTOR3 dir)
 	boundary = new BoundingSphere(D3DXVECTOR3(0, 0, 0), 1.3f);
 	//boundary = new BoundingBox(D3DXVECTOR3(-1.2, -1.2, -1.2), D3DXVECTOR3(1.2, 1.2, 1.2));
 	boundary->InitGeometry();
-	position = pos + dir;
-	scale = D3DXVECTOR3(5, 5, 5);
+	position = pos + dir + D3DXVECTOR3(0,1,0);
+	scale = D3DXVECTOR3(.2, .2, .2);
 	material = new Material();
 
 	skillDir = dir;
@@ -94,7 +94,7 @@ void ShaderCube::Update()
 		SAFE_UPDATE(p);
 	}
 
-	position += skillDir * 100 * Time::Get()->GetDeltaTime();
+	position += skillDir * 10 * Time::Get()->GetDeltaTime();
 }
 
 void ShaderCube::Render()

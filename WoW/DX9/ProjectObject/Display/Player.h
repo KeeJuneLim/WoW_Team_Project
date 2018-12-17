@@ -23,6 +23,9 @@ public:
 
 	void Delete();
 
+	void UpdateInput();
+	void ApplyMap();
+
 private:
 	IDisplayObject * face;
 	IDisplayObject * body;
@@ -41,6 +44,8 @@ private:
 
 	vector<IDisplayObject*> cowMotion;
 
+	IDisplayObject* skull;
+
 	PlayerStatus status;
 	D3DXVECTOR3 forward;
 	D3DXMATRIX matR;
@@ -49,7 +54,6 @@ private:
 	// - start // 2-ing // 3-end
 
 	//Boundary* boundary;
-
 
 	// IDisplayObject을(를) 통해 상속됨
 	virtual void Draw() override;

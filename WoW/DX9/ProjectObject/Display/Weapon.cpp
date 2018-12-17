@@ -17,7 +17,7 @@ Weapon::~Weapon()
 
 void Weapon::Init()
 {
-	Camera::Get()->SetOffset(&D3DXVECTOR3(0, 10, -50));
+	//Camera::Get()->SetOffset(&D3DXVECTOR3(0, 10, -50));
 
 	m_pCreateShadow = Shaders::Get()->GetEffect(SHADER_PATH + _T("SimpleCreateShadow.fx"));
 	m_pApplyShadow = Shaders::Get()->GetEffect(SHADER_PATH + _T("SimpleApplyShadow.fx"));

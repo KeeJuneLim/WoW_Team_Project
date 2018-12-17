@@ -4,6 +4,9 @@ class ObjMap : public IMap
 {
 private:
 	vector<D3DXVECTOR3> surfaceVertices;
+	vector<D3DXVECTOR3> computeVertices;
+
+
 	ID3DXMesh* mesh;
 	vector<Material*> materials;
 	VARIABLE(float, rayOffsetY, RayOffsetY);

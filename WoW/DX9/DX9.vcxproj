@@ -234,6 +234,7 @@
     <ClInclude Include="ProjectObject\Display\Player.h" />
     <ClInclude Include="ProjectObject\Display\RectObject.h" />
     <ClInclude Include="ProjectObject\Display\ShaderCube.h" />
+    <ClInclude Include="ProjectObject\Display\Skill\SkullMissile.h" />
     <ClInclude Include="ProjectObject\Display\Test\EnvMapping.h" />
     <ClInclude Include="ProjectObject\Display\Test\ExtractFromBuffer.h" />
     <ClInclude Include="ProjectObject\Display\Test\InstancingTest.h" />
@@ -338,6 +339,7 @@
     <ClCompile Include="ProjectObject\Display\Player.cpp" />
     <ClCompile Include="ProjectObject\Display\RectObject.cpp" />
     <ClCompile Include="ProjectObject\Display\ShaderCube.cpp" />
+    <ClCompile Include="ProjectObject\Display\Skill\SkullMissile.cpp" />
     <ClCompile Include="ProjectObject\Display\Test\EnvMapping.cpp" />
     <ClCompile Include="ProjectObject\Display\Test\InstancingTest.cpp" />
     <ClCompile Include="ProjectObject\Display\Test\NormalMapping.cpp" />

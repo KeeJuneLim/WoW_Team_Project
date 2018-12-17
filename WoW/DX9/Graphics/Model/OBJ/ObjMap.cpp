@@ -31,6 +31,8 @@ void ObjMap::Load(wstring filePath, wstring fileName, D3DXMATRIX* transform)
 	ObjLoader loader;
 	mesh = loader.LoadMesh(filePath.c_str(), fileName.c_str(), transform, materials);
 	loader.CreateSurface(surfaceVertices);
+
+
 }
 
 void ObjMap::Update()
@@ -101,7 +103,8 @@ bool ObjMap::ComputeHeight(float & height, const D3DXVECTOR3 & pos)
 	float distance;
 	float currentHeight;
 	float maxHeight = -99999;
-	for (size_t i = 0; i < surfaceVertices.size(); i += 3)
+
+		for (size_t i = 0; i < surfaceVertices.size(); i += 3)
 	{
 		if (D3DXIntersectTri(&surfaceVertices[i], &surfaceVertices[i + 1], &surfaceVertices[i + 2],
 			&ray.position, &ray.direction, NULL, NULL, &distance))

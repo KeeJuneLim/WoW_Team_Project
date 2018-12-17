@@ -4,6 +4,7 @@
 #include "ProjectObject\Display\Weapon.h"
 #include "ProjectObject\Display\ShaderCube.h"
 #include "Graphics\Model\OBJ\ObjMap.h"
+#include "ProjectObject\Display\Skill\SkullMissile.h"
 
 
 Player::Player()
@@ -20,6 +21,10 @@ Player::Player()
 	//cowJumping = new SkinnedMeshHLSL((ASSET_PATH + L"Models/X/Cow/").c_str(), L"CowJumping.X");
 	//cowJumpEnd = new SkinnedMeshHLSL((ASSET_PATH + L"Models/X/Cow/").c_str(), L"CowJumpStart.X");
 
+
+	//////
+
+	/////
 	status = Player_Stand;
 
 	cowMotion.push_back(new SkinnedMeshHLSL((ASSET_PATH + L"Models/X/Cow/").c_str(), L"CowStand.X"));
@@ -70,118 +75,16 @@ void Player::Update()
 {
 	Camera::Get()->UpdateRotation();
 	rotation.y = Camera::Get()->GetCurrentRotation()->y;
+	D3DXMatrixRotationY(&matR, rotation.y); // forward 설정
+	D3DXVec3TransformNormal(&forward,
+		&D3DXVECTOR3(0, 0, 1),
+		&matR);
+	D3DXVec3Normalize(&forward, &forward);
 
-
-	if (status != Player_Stand) //forward 설정
-	{
-
-		D3DXMatrixRotationY(&matR, rotation.y);
-		D3DXVec3TransformNormal(&forward,
-			&D3DXVECTOR3(deltaTransform.x, 0, deltaTransform.z),
-			&matR);
-		D3DXVec3Normalize(&forward, &forward);
-	}
 
 	Rendering::Get()->RemoveRenderingObject(cowMotion[status]);
 
-	if (!bJumping) //점프모션일때 다른모션 막기
-	{
-
-		if (Input::KeyPress('W'))
-		{
-			status = Player_Run;
-
-			if (Input::ButtonPress(Input::RBUTTON))
-			{
-				rotation.y = Camera::Get()->GetCurrentRotation()->y;
-			}
-		}
-		if (Input::KeyUp('W'))
-		{
-			status = Player_Stand;
-		}
-
-		if (Input::KeyPress('A'))
-		{
-			if (Input::ButtonPress(Input::RBUTTON))
-			{
-				status = Player_Run;
-				rotation.y = Camera::Get()->GetCurrentRotation()->y;
-			}
-		}
-		if (Input::KeyUp('A'))
-		{
-			status = Player_Stand;
-		}
-		if (Input::KeyPress('D'))
-		{
-			if (Input::ButtonPress(Input::RBUTTON))
-			{
-				status = Player_Run;
-				rotation.y = Camera::Get()->GetCurrentRotation()->y;
-			}
-		}
-		if (Input::KeyUp('D'))
-		{
-			status = Player_Stand;
-		}
-
-
-		if (Input::KeyDown(VK_SPACE))
-		{
-			bJumping = true;
-			status = Player_JumpStart;
-		}
-
-
-		if (Input::Get()->ButtonPress(Input::RBUTTON))
-		{
-			Camera::Get()->UpdateRotation();
-		}
-
-
-		//if (Input::Get()->ButtonPress(Input::LBUTTON))
-		//{
-		//		D3DXVECTOR3 pos = Input::GetMousePosition();
-		//		ObjMap* tmp = new ObjMap(); tmp->Init();
-		//		if (tmp->ComputeClickPosition(pos, pos.x, pos.y) == true)
-		//		{
-		//			Objects::GetPlayer()->SetPosition(&pos);
-		//		}
-		//		SAFE_DELETE(tmp);
-		//}
-
-
-		if (Input::KeyDown('1'))
-		{
-			status = Player_Jumping;
-			fireCube = new ShaderCube(position, forward);
-			fireCube->Init();
-			Scenes::Get()->GetCurrentScene()->AddDisplayObject(fireCube);
-		}
-	}
-
-
-	//if (D3DXVec3Length(&(movePosition - position)) >= FLT_EPSILON)
-	//{
-	//	bMoving = true;
-	//	status = Player_Run;
-	//	targetPosition = position + moveDirection;
-	//}
-
-	//if (D3DXVec3Length(&(movePosition - position)) < FLT_EPSILON)
-	//{
-
-	//}
-
-	//if (targetPosition)
-	//{
-	//	D3DXVECTOR3 s = targetPosition - position;
-	//	D3DXVec3Normalize(&s, &s);
-
-	//	position += s * Time::Get()->GetDeltaTime();
-	//}
-
+	UpdateInput();
 
 
 	IDisplayObject::UpdateInput();
@@ -189,9 +92,8 @@ void Player::Update()
 	IDisplayObject::ApplyVelocity();
 
 
-
-
-
+	/*skull->SetPosition(&position);
+	skull->SetRotation(&rotation);*/
 	cowMotion[status]->SetPosition(&position);
 	cowMotion[status]->SetRotation(&rotation);
 	Rendering::Get()->AddRenderingObject(cowMotion[status]);
@@ -218,6 +120,7 @@ void Player::Update()
 		{
 			status = Player_Stand;
 			bJumping = false;
+
 		}
 
 		if ((status == Player_Jumping))
@@ -227,6 +130,91 @@ void Player::Update()
 	cowMotion[status]->Update();
 
 ////////////////////
+
+	ApplyMap();
+/////////////////////////////////////////
+
+
+	ImGui::Begin("Player Status");
+	//ImGui::SliderInt("stat", &event, 0, 99);
+	ImGui::SliderFloat3("forward", (float*)forward, -10, 10);
+	ImGui::End();
+
+
+}
+
+void Player::Render()
+{
+	
+}
+
+void Player::Delete()
+{
+}
+
+void Player::UpdateInput()
+{
+
+	if (!bJumping) //점프모션일때 다른모션 막기
+	{
+
+		if (Input::KeyPress('W'))
+		{
+			status = Player_Run;
+
+		}
+		if (Input::KeyUp('W'))
+		{
+			status = Player_Stand;
+
+		}
+
+		if (Input::KeyPress('A'))
+		{
+			status = Player_Run;
+		}
+		if (Input::KeyUp('A'))
+		{
+			status = Player_Stand;
+		}
+		if (Input::KeyPress('D'))
+		{
+			status = Player_Run;
+		}
+		if (Input::KeyUp('D'))
+		{
+			status = Player_Stand;
+		}
+
+
+		if (Input::KeyDown(VK_SPACE))
+		{
+			bJumping = true;
+			status = Player_JumpStart;
+		}
+
+
+
+		if (Input::KeyDown('1'))
+		{
+			status = Player_Jumping;
+			fireCube = new ShaderCube(position, forward);
+			fireCube->Init();
+			Scenes::Get()->GetCurrentScene()->AddDisplayObject(fireCube);
+		}
+
+		if (Input::KeyDown('2'))
+		{
+			IDisplayObject *skull = new SkullMissile(position, forward);
+			skull->Init();
+			Scenes::Get()->GetCurrentScene()->AddDisplayObject(skull);
+		}
+	}
+
+}
+
+void Player::ApplyMap()
+{
 
 	list<IDisplayObject*> m_mapList;
 	m_mapList = Objects::FindObjectsByTag(TAG_MAP);
@@ -264,24 +252,6 @@ void Player::Update()
 			position = targetPosition;
 		}
 	}
-/////////////////////////////////////////
-
-
-	ImGui::Begin("Player Status");
-	//ImGui::SliderInt("stat", &event, 0, 99);
-	ImGui::SliderFloat3("forward", (float*)forward, -10, 10);
-	ImGui::End();
-
-
-}
-
-void Player::Render()
-{
-	
-}
-
-void Player::Delete()
-{
 }
 
 void Player::Draw()

@@ -409,6 +409,9 @@
     <ClInclude Include="ProjectObject\Scene\SceneTest.h">
       <Filter>00.World_of_Warcraft\01.Object\99.Scene</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectObject\Display\Skill\SkullMissile.h">
+      <Filter>00.World_of_Warcraft\02.Skill</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -647,6 +650,9 @@
     </ClCompile>
     <ClCompile Include="ProjectObject\Scene\SceneTest.cpp">
       <Filter>00.World_of_Warcraft\01.Object\99.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectObject\Display\Skill\SkullMissile.cpp">
+      <Filter>00.World_of_Warcraft\02.Skill</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

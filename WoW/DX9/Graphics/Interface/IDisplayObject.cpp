@@ -132,13 +132,13 @@ void IDisplayObject::UpdateInput()
 	else
 		deltaTransform.z = 0;
 
-	if (Input::KeyPress('E'))
+	if (Input::KeyPress('D'))
 		deltaTransform.x = 1;
-	else if (Input::KeyPress('Q'))
+	else if (Input::KeyPress('A'))
 		deltaTransform.x = -1;
 	else
 		deltaTransform.x = 0;
-
+/*
 	if (Input::KeyPress('D'))
 	{
 		if(Input::ButtonPress(Input::RBUTTON))
@@ -155,7 +155,7 @@ void IDisplayObject::UpdateInput()
 	}
 	else
 		deltaTransform.y = 0;
-
+*/
 	if (Input::KeyDown(VK_SPACE))
 	{
 		velocity.y = jumpPower;

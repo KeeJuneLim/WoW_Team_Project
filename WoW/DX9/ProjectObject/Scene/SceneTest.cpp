@@ -53,12 +53,6 @@ void SceneTest::Init()
 	float offset = 2.5f;
 
 
-	pObj = new Player();
-	pObj->Init();
-	AddDisplayObject(pObj);
-	Objects::AddToTagList(TAG_PLAYER, pObj);
-	camTarget = pObj;
-
 	D3DXMATRIX matS1, matR1, matT1, localMat1;
 	D3DXMatrixScaling(&matS1, 0.12f, 0.12f, 0.12f);
 	D3DXMatrixRotationY(&matR1, D3DX_PI * 1.0f);
@@ -69,6 +63,14 @@ void SceneTest::Init()
 	map->Load(ASSET_PATH + L"Models/MAP/", L"testmap1.obj", &localMat1);
 	map->Init();
 	AddDisplayObject(map);
+
+
+	pObj = new Player();
+	pObj->Init();
+	AddDisplayObject(pObj);
+	Objects::AddToTagList(TAG_PLAYER, pObj);
+	camTarget = pObj;
+
 
 
 
@@ -83,13 +85,6 @@ void SceneTest::Init()
 	//map2->Load(ASSET_PATH + L"Models/MAP/", L"testmap2.obj", &localMat1);
 	//map2->Init();
 	//AddDisplayObject(map2);
-
-
-
-
-	//player->Init();
-	//pObj = new SkinnedMeshHLSL((ASSET_PATH + L"Models/x/zealot/").c_str(), L"Idle.X");
-	//pObj->Init(); AddDisplayObject(pObj);
 
 
 
