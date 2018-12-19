@@ -96,15 +96,11 @@ void Player::Update()
 	skull->SetRotation(&rotation);*/
 	cowMotion[status]->SetPosition(&position);
 	cowMotion[status]->SetRotation(&rotation);
-	Rendering::Get()->AddRenderingObject(cowMotion[status]);
-
-
 
 	LPD3DXANIMATIONSET pCurrAnimSet = NULL;
 	D3DXTRACK_DESC track;
 	dynamic_cast<SkinnedMeshHLSL*>(cowMotion[status])->m_pAC->GetTrackDesc(0, &track);
 	dynamic_cast<SkinnedMeshHLSL*>(cowMotion[status])->m_pAC->GetAnimationSet(0, &pCurrAnimSet);
-
 	if (pCurrAnimSet->GetPeriodicPosition(track.Position)
 		>= pCurrAnimSet->GetPeriod() - 0.02f)
 	{
@@ -126,6 +122,11 @@ void Player::Update()
 		if ((status == Player_Jumping))
 			status = Player_JumpEnd;
 	}
+	Rendering::Get()->AddRenderingObject(cowMotion[status]);
+
+
+
+	// sadsa
 
 	cowMotion[status]->Update();
 
