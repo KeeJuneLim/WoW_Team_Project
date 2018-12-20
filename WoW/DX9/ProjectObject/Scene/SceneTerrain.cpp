@@ -7,7 +7,8 @@
 #include "ProjectObject/Display/Test/InstancingTest.h"
 #include "ProjectObject\Display\Player.h"
 #include "ProjectObject\Display\ShaderCube.h"
-
+#include "ProjectObject\Display\Particle\SphereParticle.h"
+#include "ProjectObject\Display\Boss\Boss1.h"
 
 SceneTerrain::SceneTerrain(WORD index)
 	:IScene(index)
@@ -25,6 +26,8 @@ void SceneTerrain::Init()
 	IDisplayObject* pObj = NULL, *camTarget = NULL;
 	pObj = new SkyGradient(); pObj->Init(); AddDisplayObject(pObj);
 	pObj = new Cloud(); pObj->Init(); AddDisplayObject(pObj);
+	pObj = new SphereParticle(); pObj->Init(); AddDisplayObject(pObj);
+	pObj = new Boss1(); pObj->Init(); AddDisplayObject(pObj);
 	//pObj = new ASEWoman(); pObj->Init(); AddDisplayObject(pObj);
 
 	IDisplayObject* player = new Player(); player->Init(); AddDisplayObject(player);
@@ -34,7 +37,7 @@ void SceneTerrain::Init()
 	//pObj = new ShaderCube(D3DXVECTOR3(0,0,0), D3DXVECTOR3(1,1,1)); pObj->Init(); AddDisplayObject(pObj);
 
 	Terrain* map = new Terrain(); AddDisplayObject(map);
-	wstring filepath = ASSET_PATH + L"/textures/heightmap/grass.dds";
+ 	wstring filepath = ASSET_PATH + L"/textures/heightmap/grass.dds";
 	map->GetMaterial()->SetTexture(TT_DiffuseMap, Assets::GetTexture(filepath.c_str()));
 	filepath = ASSET_PATH + L"/textures/heightmap/slope.dds";
 	map->GetMaterial()->SetTexture(TT_DiffuseMap1, Assets::GetTexture(filepath.c_str()));
@@ -49,7 +52,7 @@ void SceneTerrain::Init()
 	//map->SetHeightFactor(0.1f);
 	//map->Load(ASSET_PATH + L"textures/heightmap/heightmap.raw");
 	//map->LoadData(ASSET_PATH + L"Models/Map/00.terrain");
-	map->UpdateDimension(65);
+	map->UpdateDimension(33);
 	map->Init();
 
 	pObj = new InstancingTest(); pObj->Init(); AddDisplayObject(pObj);

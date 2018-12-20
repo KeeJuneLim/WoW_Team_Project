@@ -125,6 +125,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="00.World_of_Warcraft\01.Object\02.Boss">
+      <UniqueIdentifier>{68dc1507-bcd3-46b8-9f54-521ecd420939}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DX9.h">
@@ -412,6 +415,9 @@
     <ClInclude Include="ProjectObject\Display\Skill\SkullMissile.h">
       <Filter>00.World_of_Warcraft\02.Skill</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectObject\Display\Boss\Boss1.h">
+      <Filter>00.World_of_Warcraft\01.Object\02.Boss</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -653,6 +659,9 @@
     </ClCompile>
     <ClCompile Include="ProjectObject\Display\Skill\SkullMissile.cpp">
       <Filter>00.World_of_Warcraft\02.Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectObject\Display\Boss\Boss1.cpp">
+      <Filter>00.World_of_Warcraft\01.Object\02.Boss</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

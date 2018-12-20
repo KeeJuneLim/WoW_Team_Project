@@ -227,6 +227,7 @@
     <ClInclude Include="Manager\Scenes.h" />
     <ClInclude Include="Manager\Shaders.h" />
     <ClInclude Include="ProjectObject\Display\ASEWoman.h" />
+    <ClInclude Include="ProjectObject\Display\Boss\Boss1.h" />
     <ClInclude Include="ProjectObject\Display\Cube.h" />
     <ClInclude Include="ProjectObject\Display\Grid.h" />
     <ClInclude Include="ProjectObject\Display\MainUI.h" />
@@ -333,6 +334,7 @@
     <ClCompile Include="Manager\Scenes.cpp" />
     <ClCompile Include="Manager\Shaders.cpp" />
     <ClCompile Include="ProjectObject\Display\ASEWoman.cpp" />
+    <ClCompile Include="ProjectObject\Display\Boss\Boss1.cpp" />
     <ClCompile Include="ProjectObject\Display\Cube.cpp" />
     <ClCompile Include="ProjectObject\Display\Grid.cpp" />
     <ClCompile Include="ProjectObject\Display\MainUI.cpp" />
